@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Copy pluggable database..."
-export ORACLE_HOME="/var/jenkins_home/tools/oracle"
-cd /var/jenkins_home/tools/oracle
-ls -la
-/var/jenkins_home/tools/oracle/instantclient_12_2/sqlplus c##dba/dba@cdqc01
+export ORACLE_HOME="/u01/app/oracle/product/11.2.0/xe"
+  /u01/app/oracle/product/11.2.0/xe/bin/sqlplus c##dba/dba@cdqc01 <<SQL
   set serveroutput on size unlimited;
 SQL
