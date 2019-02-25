@@ -10,7 +10,7 @@ pipeline {
         stage('Restore Orginal Database') {
             steps {
                 echo 'Restoring db..'
-                sh ./scripts/restore_original_db.sh
+                sh "./scripts/restore_original_db.sh"
             }
         }
         
